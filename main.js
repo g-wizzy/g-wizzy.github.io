@@ -1,4 +1,9 @@
-window.onload = () => {
+function update() {
     const word = words[Math.floor(Math.random() * words.length)];
-    document.getElementById("lel").innerText = word;
+    document.getElementById("text").innerText = word;
+}
+
+window.onload = () => {
+    update();
+    document.getElementById("page").onclick = update;
 }
