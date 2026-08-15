@@ -1,1 +1,0 @@
-from .main import is_good_word
